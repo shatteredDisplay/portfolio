@@ -2,7 +2,7 @@
 <html lang="en">
   <link rel="icon" 
        
-      href="/logoFinal.png" />
+      href="logoFinal.png" />
   <SCRIPT type="text/javascript">
   function JavaBlink() {
      var blinks = document.getElementsByTagName('JavaBlink');
@@ -18,7 +18,7 @@
   else window.onload = JavaBlink;
 </SCRIPT>
   <script language="JavaScript">
-<!-- 
+ 
 var space = " ";
 var speed = "60";
 var pos = 0;
@@ -31,7 +31,7 @@ if (pos > msg.length) pos = 0;
 window.setTimeout("Scroll()", speed);
 }
 Scroll();
--->
+
 </script>
   <style>html:before {
   content: " ";
@@ -45,16 +45,31 @@ Scroll();
 </style>
 <style>
 body {
-  background: url('/spaceBackground.gif');
+  background: url('spaceBackground.gif');
   background-color: black;
   font-family: Garamond;
   }
   img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto; 
+  }
+  a:link
+  {
+      color:#FFFFFF;
+  }
+
+  a:visited
+  {
+      color:#FFFFFF;
+  }
+
+  a:hover 
+  {
+      color:#FFFFFF;
   }
   </style>
+
 
 <head>
     
@@ -62,26 +77,27 @@ body {
     <title>SHATTERED DISPLAY</title>
     <meta name="description" content="Indie horror developer">
 </head>
-<!--
+<style>
 .layout {
-  width: 1366px;
-  height: 768px;
+  width: 100%;
+  height: 100%;
 
   display: grid;
   grid:
     "header header header" auto
     "leftSide body rightSide" 1fr
     "footer footer footer" auto
-    / auto 1fr auto;
+    / 0.2fr 0.6fr 0.2fr;
   gap: 8px;
 }
 
 .header { grid-area: header; }
 .leftSide { grid-area: leftSide; }
-.body { grid-area: body; text-align: center;  word-wrap: break-word;}
+.body { grid-area: body;}
 .rightSide { grid-area: rightSide; }
-.footer { grid-area: footer; }
--->
+
+.footer { grid-area: footer;}
+</style>
 <section class="layout">
 	<div class="header">
     <hr>
@@ -90,93 +106,71 @@ body {
 <hr>
 </div>
 <div class="leftSide">
-  <img src="/logoTransparentTest.png" alt="Logo" width =25% height= 25% align ="left">
+	
+  <img src="logoTransparentTest.png" alt="Logo" width =170% height= 170% align ="left">
+  <em><p style="color: white; font-size: 30px; text-align: left; font-weight: bold; padding: 7px">CONTACTS</p></em>
+  <p style="color:white; font-size: 20px; text-align: left; padding: 7px"> Email: <b><a href= "mailto:dev@shattereddisplay.com" target="_blank"> dev@shattereddisplay.com</a></b><br><br>
+  Instagram: <a href= "https://www.instagram.com/shattereddisplay/" target="_blank"> @shattereddisplay</a></b></p>
+	
+
 </div>
-<center> <div class="body">
+<div class="body">
       <br><br>
       <p>
     <em><h1 style="color: white; font-size: 300%">    </h1></em> <br>
-    <h2 style ="color: white; font-size: 300%; align: left;"><JavaBlink>WELCOME</JavaBlink></h2> 
+    <center> <h2 style ="color: white; font-size: 300% "><JavaBlink>WELCOME</JavaBlink></h2></center> 
       <br>
         
       </p>
-	
-	
-      <br><br>
-        <h1 style="color: white; font-size: 23px;">
-	      <p style="text-align:left; padding-left: 20%" >Thanks for checking out the site! It's currently still a work in progress but I hope to use this as <br>
-	      a site to showcase my games as well as anything else created under Shattered Display. I'll try and host <br> devlogs here
-	      to showcase what I'm working on (if you don't mind slight spoilers, but I'll try to keep those to a minimum) <br> but thanks for stopping by!</p> 
-
-	      </h1> 
-     <h2 style="color: white; align: center">devlogs</h2>
+     <h1 style="color: white; font-size: 23px; padding:10px; background: rgba(0,0,0,0.8);">
+	<p style="text-align: center; word-wrap: break-word">Thanks for checking out the site! 
+	It's currently still a work in progress but I hope to use <br> this as 
+	a site to showcase my games as well as anything else created <br> under Shattered Display. I'll try and host  devlogs here
+	to update everyone on  what I'm working on <br>(if you don't mind slight spoilers, but I'll try to keep those to a minimum) but thanks for stopping by!</p> 
+     </h1> 
+     <h2 style="color: white; align: center; padding: 15px">DEVLOGS</h2>
 
 
 
-<div style="padding:10px; width:50%; height:200px; margin:0px; background: rgba(0,0,0,0.8); overflow-y: scroll; align: middle; border: 0px; margin-left: 175px; margin-right: 175px "><font color="#0090ff" font="" size="4"><p align="left">
+<div style="padding:10px; width:300; height:200px; margin:0px; background: rgba(0,0,0,0.8); overflow-y: scroll; border: 0px; margin-left: 15px; margin-right: 15px "><font color="#0090ff" font="" size="4"><p align="left">
 
 
-</p><hr>
-      <p align="left">
-        
-<font color="white">June 26th, 2024, 4:40 pm</font><br> 
-TEST TEST TEST
+<p style="align:left";>
+<hr>
+<font color="white"; size="6px">June 26th, 2024, 10:04 pm</font><br>
+<p style="padding: 1px; font-size: 22px">
+Finally got to building the website today after wrestling with Google and Squarespace all day yesterday to reroute the DNS through Github 
+so I could actually build this myself. Took a while to dust off my lackluster HTML and CSS skills to cobble together this website but it's not looking 
+too bad imo. What I'd like to do is have a seperate page for each game but when the Steam page already exists for WtB it seems sorta like a lot of
+work that won't really be worth it. I still need ideas of things to add to the website considering it's pretty bare bones rn but I'm proud that it exists
+in the first place.I've only ever had an itchi.city page before so this is a big step up. Tomorrow I'll probably work on rebranding the twitter and
+discord server so everything looks more official since that's what this is all about. 
+
 </p></font></div>
-	</div> </div>
-<!--
-<hr style="width: 1131px">
-  <h2 style="color:white">Sign my guestbook!</h2>
-  <h3 style="color:white">Sign your name, leave a note, even link your own site, be nice.</h3>
-  <a href="http://users3.smartgb.com/g/g.php?a=s&i=g36-34916-ab" target="_blank"><img alt="Guestbook" border="0" src="http://extras3.smartgb.com/b/gb_80x40.gif" width="80" height="40"></a>
-  <br><br>
- 
-  <br><br>
-  <hr style="width: 1131px">
-  <h2 style="color:white">Check out my vaporwave playlist on Spotify!</h2>
-  <br>
-  <a href="https://open.spotify.com/playlist/1Dsk6dn4cJcgbsUa56oYF6?si=1b458fdc6cb54962" target="_blank" alt="nightwave plaza" title="nightwave plaza">
-  <img src="diskGif.gif" height="100px"/>
-  </a>
-  <br>
-    <hr style="width: 1131px">
-  <h2 style="color:white">Maybe have a chat?</h2>
-  <br>
-   <div class="chatbox">
-       <iframe src="https://www3.cbox.ws/box/?boxid=3532482&boxtag=cya360" width="35%" height="250" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
-        </div>
-  <br>
-  <hr>
-  <br>
-  
-    <p>
-        <a href="https://ichi.city" target="_blank">
-            <img src="https://ichi.city/banner.png"/> 
-        </a>
-      <a href="https://insomniac.ichi.city/">
-        	<img src="/insomniacTagCRT.png"/>
-      </a>
-      <a href="https://forum.agoraroad.com/" target="_blank">
-        	<img src="/agoraTag.gif"/>
-            <img src="/agoraTraveler.png"/>
-      </a>
+	</div> 
+  <div class="rightSide">
+	<p style="color: white; text-align: center; text-weight: bold; text-decoration: underline; font-size: 60px"> GAMES </p>
+	<p style="color: white; text-align: center; text-weight: bold; font-size: 35px"> 
+	Within the Backrooms <br> 
+	<small><a href= "https://store.steampowered.com/app/2158740/Within_the_Backrooms/" target="_blank">Available on Steam</a></small></p>
+	
+	<p style="color: white; text-align: center; text-weight: bold; font-size: 35px"> 
+	Oculi Memoriae <br> <small> In Development</small> </p>
+	<p style="color: white; text-align: center; text-weight: bold; text-decoration: underline; font-size: 40px"> SOUNDTRACKS <br>
+	<small> by eze </small> </p>
 
-      <a href="https://status.cafe/" target="_blank">
-        <img src="/statusCafe.png"/>
-      </a>
-      
-    </p>
-  <div id='tag-webring'>
-    <script type="text/javascript" src="https://voicedrew.xyz/wr/onionring-variables.js"></script>
-    <script type="text/javascript" src="https://voicedrew.xyz/wr/onionring-widget.js"></script>
+	<p style="color: white; text-align: center; text-weight: bold; font-size: 35px"> 
+	Within the Backrooms <br> 
+	<small><a href= "https://ezecomposer.bandcamp.com/album/within-the-backrooms-original-game-soundtrack" target="_blank">Available on Bandcamp</a></small></p>
+
+	
+
+
+
+
 </div>
-  
-  <script language="JavaScript">var fhs = document.createElement('script');var fhs_id = "5686649";
-var ref = (''+document.referrer+'');var pn =  window.location;var w_h = window.screen.width + " x " + window.screen.height;
-fhs.src = "//freehostedscripts.net/ocounter.php?site="+fhs_id+"&e1=Online User&e2=Online Users&r="+ref+"&m=0&wh="+w_h+"&a=1&pn="+pn+"";
-document.head.appendChild(fhs);document.write("<span id='o_"+fhs_id+"'></span>");
-</script>
-
--->
-  
+<div class="footer">
+	<p> test </p>
+</div>
 </body>
 </html>
